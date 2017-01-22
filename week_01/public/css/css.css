@@ -1,1 +1,71 @@
 /* YOUR CSS GOES HERE */
+
+/* Globals */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Body and Type */
+body {
+	color: #111;
+	font-family: Georgia, serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	width: 768px;
+	margin: auto;
+	padding: 1rem 3rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 2.75em;
+	line-height: 1.2em;
+	margin: .5em 0;
+}
+
+h2 {
+	font-size: 1.65em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+a:link, a:visited, a:active, a:focus {
+	color: #0074d9;
+}
+
+blockquote {
+	background-color: #ddd;
+	margin: 1rem 0;
+	padding: .5rem .5rem 1rem .5rem;
+}
+
+ul {
+	margin: 1.5rem 0;
+	padding: 0 0 0 1rem;
+	text-indent: 1rem;
+}
+
+hr {
+	margin: 3.125rem 0;
+}
+
+/* Images and Videos */
+
+img, iframe {
+	display: inline-block;
+	width: 100%;
+}
+
+iframe {
+	height: 350px;
+}
