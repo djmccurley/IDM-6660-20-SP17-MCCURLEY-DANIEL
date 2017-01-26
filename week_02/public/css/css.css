@@ -1,0 +1,108 @@
+html {
+    font-size: 18px;
+    line-height: 1rem;
+    font-family: sans-serif;
+    color: #111;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+body, body * {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: .666rem;
+    line-height: 1rem;
+}
+
+body>* {
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.font-scale-up-3 {
+    font-size: 3.375em;
+    line-height: 2rem;
+}
+
+.font-scale-up-2 {
+    font-size: 2.25em;
+    line-height: 2rem;
+}
+
+.font-scale-up-1 {
+    font-size: 1.5em;
+}
+
+.font-scale-down-1 {
+    font-size: 0.666em;
+}
+
+header {
+    margin: 1rem auto 2rem;
+    padding: 1rem;
+    background-color: #FF851B;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+header h2 {
+    font-weight: normal;
+}
+
+article {
+    margin-bottom: 4rem;
+}
+
+img.cover-img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+article h2 {
+    margin-bottom: 1rem;
+    line-height: 1rem;
+}
+
+article p span {
+    display: none;
+}
+
+article p:after {
+    content: "Read More...";
+    font-size: 1.5em;
+    color: #FF851B;
+    text-decoration: underline;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+article p:hover:after {
+    color: #111;
+    text-decoration: none;
+}
+
+footer {
+    margin-bottom: 3rem;
+}
