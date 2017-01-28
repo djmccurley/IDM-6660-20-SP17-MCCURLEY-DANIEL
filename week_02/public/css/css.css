@@ -72,6 +72,7 @@ header h2 {
 
 article {
     margin-bottom: 4rem;
+    position: relative;
 }
 
 img.cover-img {
@@ -111,8 +112,7 @@ footer {
 
 @media screen and (min-width: 480px) {
     body>* {
-        width: 95%;
-        margin: 0 auto;
+        width: 400px;
     }
 
     header {
@@ -125,5 +125,35 @@ footer {
 
     article p:after {
         display: none;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    html {
+        font-size: 16px;
+    }
+
+    body>* {
+        width: 420px;
+    }
+    img.cover-img {
+        width: 45%;
+        /*margin: 0 5% 0 0;*/
+        position: absolute;
+        top: 0%;
+
+    }
+
+    article {
+
+    }
+
+    article h1, article h2, article p {
+        margin-left: 49%;
+        width: 51%;
+    }
+
+    footer {
+        text-align: center;
     }
 }
