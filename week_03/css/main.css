@@ -200,6 +200,7 @@ article h3 {
 .article_content {
     padding: 1rem;
     background-color: #FFF7DA;
+    display: none;
 }
 
 .article_content p:nth-of-type(1) {
