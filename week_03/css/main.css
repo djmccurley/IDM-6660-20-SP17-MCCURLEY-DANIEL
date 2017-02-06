@@ -95,17 +95,146 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+/* global styles */
 
 
 
+html {
+  box-sizing: border-box;
+  background-color: #555;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
 
+body {
+    background-image: url("../img/bg.jpg");
+    /*added max-width and margin to simulate mobile layout in browser*/
+    max-width: 400px;
+    margin: auto;
+}
 
+/* header styles */
 
+header {
+    background-color: #003566;
+    color: #fff;
+    padding: .5rem;
+}
 
+header img {
+    height: 2.5rem;
+    display: block;
+    float: left;
+}
 
+header h1 {
+    font-size: 1rem;
+    float: left;
+    font-family: Palatino, Georgia, Times, serif;
+    line-height: 1em;
+    margin: 1rem 0 0 1rem;
+}
 
+header a:link, header a:visited {
+    display: inline-block;
+    float: right;
+    padding: .5rem .75rem;
+    background-color: #fff;
+    border-radius: 5px;
+    color: #003566;
+    text-decoration: none;
+    font-weight: bold;
+}
 
+header a:hover, header a:active, header a:focus {
+    background-color: #bbb;
+}
+
+/* main styles */
+
+main {
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+main h2 {
+    margin: 0;
+    color: #AD2800;
+    margin-bottom: 1rem;
+}
+
+main p {
+    font-size: .875em;
+}
+
+/* article styles */
+
+article {
+    margin-bottom: 1rem;
+}
+article h3 {
+    display: block;
+    margin: 0;
+    padding: 1.4rem 1rem;
+    font-size: 1.5em;
+    color: #fff;
+    background-image: url('../img/cake_1.jpg');
+}
+
+.article_content {
+    padding: 1rem;
+    background-color: #FFF7DA;
+    display: none;
+}
+
+.article_content p:nth-of-type(1) {
+    margin-top: 0;
+}
+
+article a.cta_button {
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 1rem auto;
+    padding: 1rem;
+    background-color: #AD2800;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+
+}
+
+.gallery {
+    position: relative;
+}
+
+.gallery img {
+    width: 100%;
+    display: block;
+}
+
+/* This is janky but would get replaced with jquery/js gallery window*/
+.gallery p.gallery_label {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    line-height: 0;
+    position: absolute;
+    width: 100%;
+    padding: 10% 1rem;
+    background-color: rgba(0, 0, 0, .5);
+    bottom: 40%;
+    left: 50%;
+    transform: translateY(-50%);
+    transform: translateX(-50%);
+}
+
+/*footer styles */
 
 
 
@@ -191,9 +320,7 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
-}
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
