@@ -164,6 +164,7 @@ main h2 {
     margin: 0;
     color: #AD2800;
     margin-bottom: 1rem;
+    font-size: 1.75em;
 }
 
 main p {
@@ -181,9 +182,21 @@ article h3 {
     padding: 1.4rem 1rem;
     font-size: 1.5em;
     color: #fff;
-    background-image: url('../img/cake_1.jpg');
+    background-size: 100%;
+    text-shadow: 1pt 1pt rgba(0, 0, 0, .75);
 }
 
+#cakes {
+    background-image: url('../img/cake_bg.jpg');
+}
+
+#cookies {
+    background-image: url('../img/cupcakes_bg.jpg');
+}
+
+#buns {
+    background-image: url('../img/buns_bg.jpg');
+}
 .article_content {
     padding: 1rem;
     background-color: #FFF7DA;
@@ -236,7 +249,35 @@ article a.cta_button {
 
 /*footer styles */
 
+footer {
+    background-color: #003566;
+    color: #fff;
+    padding: .5rem;
+    padding: 2rem 1rem;
+}
+.footer_module {
+    font-size: .75em;
+    line-height: .9em;
+    width: 33%;
+    float: left;
+}
 
+.footer_module h4 {
+    margin-top: 0;
+}
+
+.footer_module a:link, .footer_module a:visited {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1pt solid #fff;
+} 
+
+.footer_module a.social:link, .footer_module a.social:visited {
+    border-bottom: none;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 2rem;
+} 
 
 
 
