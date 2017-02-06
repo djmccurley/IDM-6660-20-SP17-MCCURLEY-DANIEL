@@ -141,7 +141,7 @@ header h1 {
 header a:link, header a:visited {
     display: inline-block;
     float: right;
-    padding: .5rem .75rem;
+    padding: .5rem .5rem;
     background-color: #fff;
     border-radius: 5px;
     color: #003566;
@@ -168,7 +168,7 @@ main h2 {
 }
 
 main p {
-    font-size: .875em;
+    font-size: 1em;
 }
 
 /* article styles */
