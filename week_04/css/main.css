@@ -213,6 +213,14 @@ article h3 {
     text-shadow: 1pt 1pt rgba(0, 0, 0, .75);
 }
 
+/* I can't believe this actually worked this easily */
+article h3:after {
+    content: "+";
+    font-size: 2rem;
+    line-height: 100%;
+    float: right;
+}
+
 #cakes {
     background-image: url('../img/cake_bg_2.png');
     background-size: cover;
@@ -295,12 +303,13 @@ caption {
 }
 .gallery {
     position: relative;
+    background-color: #FFF7DA;
     width: 1200px;
 }
 
 .gallery img {
     width: 20%;
-    margin-right: 2%;
+    margin-right: 1%;
     display: inline;
     float: left;
 }
