@@ -113,10 +113,11 @@ header {
   background-color: #111;
   color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .2);
+  width: 100%;
 }
 
 header h1 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   padding-left: 1rem;
   display: inline-block;
   margin: .5rem 0;
@@ -125,7 +126,7 @@ header h1 {
 header a:link, header a:visited, header a:focus, header a:active {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   display: block;
   float: right;
   padding: .5rem 1rem;
@@ -137,6 +138,7 @@ main {
 .form_module {
   padding: 0rem;
   margin-bottom: 2rem;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .3);
 }
 
 .category_header {
@@ -212,6 +214,7 @@ td input {
 }
 
 .category_module {
+  padding-bottom: 1rem;
 }
 .category_module .output_field {
   margin: 0 1rem;
@@ -221,11 +224,31 @@ td input {
   padding-left: 1rem;
 }
 
+footer {
+  background-color: #111;
+  color: #fff;
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+footer:after {
+  content: "+ Add Category";
+
+}
+
 .add_btn {
   font-size: 3rem;
   background-color: #111;
   color: #fff;
-  display: block;
+  display: none;
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
@@ -238,31 +261,12 @@ td input {
 
 @media only screen and (min-width: 480px) {
     /* Style adjustments for viewports that meet the condition */
-  main {
-    padding: 1rem;
-  }
-
-  .form_module {
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .3);
-  }
 
   header h1 {
-    font-size: 1.2rem;
-    padding-left: 2rem;
-    display: inline-block;
-    margin: .5rem 0;
+
   }
 
-  header a {
-    font-size: 1.2rem;
-  }
 
-  .category_header {
-    box-shadow: none;
-  }
-  .category_module {
-    padding-bottom: 1rem;
-  }
 }
 
 @media only screen and (min-width: 850px) {
