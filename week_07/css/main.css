@@ -126,18 +126,28 @@ header h1 {
   margin: .5rem 0;
 }
 
-header a:link, header a:visited, header a:focus, header a:active {
+header a:link, header a:visited  {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
   display: block;
   float: right;
   padding: .5rem 1rem;
+  transition: .15s ease all;
 }
 
-main {
-  margin: 3rem 0 3rem 0;
+header a:focus, header a:active, header a:hover {
+  color: #edf702;
+  transition: .15s ease all;
 }
+
+
+
+main {
+  margin: 2rem 0 3rem 0;
+}
+
+
 .form_module {
   padding: 0rem;
   margin-bottom: 2rem;
@@ -149,6 +159,7 @@ main {
   color: #fff;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .2);
   padding: 1rem 1rem;
+  overflow: hidden;
 }
 
 input.tax_toggle {
@@ -176,8 +187,22 @@ h2 {
   display: inline-block;
 }
 
+.category_header a:link, .category_header a:visited {
+  color: #fff;
+  transition: .15s ease all;
+}
+
+.category_header a:hover, .category_header a:focus, .category_header a:active {
+  color: #edf702;
+  transition: .15s ease all;
+}
+
+
 .category_header i {
-  margin-left: .5rem;
+  text-align: right;
+  font-size: 1.2rem;
+  line-height: 1.9rem;
+  float: right;
 }
 
 h3 {
@@ -252,6 +277,13 @@ td input {
   font-size: 1.2rem;
   padding: .5rem;
   cursor: pointer;
+  transition: .15s ease all;
+}
+
+.add_btn_mobile:hover, .add_btn_mobile:active {
+  background-color: #edf702;
+  color: #111;
+  transition: .15s ease all;
 }
 
 .add_btn_mobile:after {
@@ -259,22 +291,10 @@ td input {
 
 }
 
-.add_btn {
-  font-size: 3rem;
-  background-color: #111;
-  color: #fff;
-  display: none;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .2);
-  margin: auto;
-}
 
 
-@media only screen and (min-width: 480px) {
+
+@media only screen and (min-width: 500px) {
     /* Style adjustments for viewports that meet the condition */
 
   header h1 {
@@ -283,34 +303,58 @@ td input {
 
   main {
     padding: 1rem;
+    margin-top: 3rem;
   }
 
-  .form_module {
-    width: 30%;
+  .receipt_wrapper {
+    width: 35%;
     float: left;
     margin-right: 1rem;
+  }
+
+  .category_wrapper {
+    width: 60%;
+    float: left;
+  }
+  
+  .form_module {
+    width: 100%;
   }
 
   .category_module {
-    /*width: 45%;*/
+    width: 100%;
   }  
 }
 
-@media only screen and (min-width: 850px) {
-  .form_module {
-    width: 22%;
+@media only screen and (min-width: 700px) {
+  .receipt_wrapper {
+    width: 30%;
+  }
+
+  .category_wrapper {
+    width: 66%;
+  }
+
+  .category_module {
+    width: 45%;
     float: left;
     margin-right: 1rem;
   }
-
-  .add_btn {
-    float: left;
-    margin-left: 2rem;
-    margin-top: 40vh;
-  }
 }
 
+@media only screen and (min-width: 985px) {
+  .receipt_wrapper {
+    width: 22%;
+  }
 
+  .category_wrapper {
+    width: 72%;
+  }
+
+  .category_module {
+    width: 31%;
+  }
+}
 
 /* ==========================================================================
    Helper classes

@@ -17,7 +17,7 @@
         </header>
 
         <main class="clearfix">
-          <div class-"tester">
+          <div class="receipt_wrapper clearfix">
             <div class="form_module" id="receipt_input">
               <div class="category_header">
                 <h2>Receipt Info</h2>
@@ -35,11 +35,12 @@
               </div>
              </div>
                 
-          </div>   
+          </div>  <!-- receipt wrapper -->  
+          <div class="category_wrapper clearfix">
            <div class="form_module category_module">
             <div class="category_header">
               <h2 contenteditable="true">Category 1</h2>
-              <i class="fa fa-pencil" aria-hidden="true"></i>
+              <a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
               <!-- put slider in here -->
             </div>
             <table>
@@ -71,7 +72,7 @@
           <div class="form_module category_module">
             <div class="category_header">
               <h2 contenteditable="true">Category 2</h2>
-              <i class="fa fa-pencil" aria-hidden="true"></i>
+              <a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
               <!-- put slider in here -->
             </div>
             <table>
@@ -101,7 +102,7 @@
                      <div class="form_module category_module">
             <div class="category_header">
               <h2 contenteditable="true">Category 2</h2>
-              <i class="fa fa-pencil" aria-hidden="true"></i>
+              <a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
               <!-- put slider in here -->
             </div>
             <table>
@@ -127,8 +128,8 @@
             <h3>Category Total</h3>
             <div class="output_field"><p>$11.05</p></div>
             <p class="tax_check">Include Tax? <input type="checkbox" class="tax_toggle" name="tax" checked></p>             
-           </div>
-           <a href="#!" class="add_btn">+</a>
+            </div>
+          </div> <!-- category wrapper -->  
            <div class="add_btn_mobile"></div>
         </main>
         <script></script>
