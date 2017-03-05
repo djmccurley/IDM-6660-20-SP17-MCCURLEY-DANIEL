@@ -106,7 +106,7 @@ html {
 
 body {
   font-family: 'Inconsolata', monospace;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 header {
@@ -114,7 +114,10 @@ header {
   color: #fff;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .2);
   width: 100%;
+  position: fixed;
+  top: 0%;
 }
+
 
 header h1 {
   font-size: 1.2rem;
@@ -133,7 +136,7 @@ header a:link, header a:visited, header a:focus, header a:active {
 }
 
 main {
-  margin-bottom: 3rem;
+  margin: 3rem 0 3rem 0;
 }
 .form_module {
   padding: 0rem;
@@ -146,6 +149,10 @@ main {
   color: #fff;
   box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, .2);
   padding: 1rem 1rem;
+}
+
+input.tax_toggle {
+
 }
 
 .category_inputs {
@@ -177,8 +184,16 @@ h3 {
   font-size: 1rem;
   font-weight: normal;
   margin: 0 0 1rem 0;
+  display: inline-block;
 }
 
+p.tax_check {
+  
+  text-align: right;
+  color: #888;
+  padding-right: 1rem;
+  margin: 1rem 0 0 0;
+}
 .output_field {
   background-color: #edf702;
   display: block;
@@ -224,14 +239,14 @@ td input {
   padding-left: 1rem;
 }
 
-footer {
+.add_btn_mobile {
   background-color: #111;
   color: #fff;
   position: fixed;
+
   bottom: 0%;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40%;
+  left: 0%;
+  width: 100%;
   text-align: center;
   font-weight: bold;
   font-size: 1.2rem;
@@ -239,7 +254,7 @@ footer {
   cursor: pointer;
 }
 
-footer:after {
+.add_btn_mobile:after {
   content: "+ Add Category";
 
 }
@@ -266,12 +281,24 @@ footer:after {
 
   }
 
+  main {
+    padding: 1rem;
+  }
 
+  .form_module {
+    width: 30%;
+    float: left;
+    margin-right: 1rem;
+  }
+
+  .category_module {
+    /*width: 45%;*/
+  }  
 }
 
 @media only screen and (min-width: 850px) {
   .form_module {
-    width: 25%;
+    width: 22%;
     float: left;
     margin-right: 1rem;
   }

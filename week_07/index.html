@@ -5,6 +5,7 @@
         <title>Receipt Splitter App</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="css/normalize.css">
+        <!-- <link rel="stylesheet" href="ccc/form_reset.css"> -->
         <link rel="stylesheet" href="css/main.css">
         <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
         <script src="https://use.fontawesome.com/a26c54cc82.js"></script>
@@ -16,22 +17,25 @@
         </header>
 
         <main class="clearfix">
-           <div class="form_module" id="receipt_input">
-            <div class="category_header">
-              <h2>Receipt Info</h2>
-            </div>
-            <div class="category_inputs">
-              <label>Total</label>
-              <input type="text" name="total" value="$31.79" placeholder="$0.00">
-              <label>Tax</label>
-              <input type="text" name="tax" value="$2.23" placeholder="$0.00">
+          <div class-"tester">
+            <div class="form_module" id="receipt_input">
+              <div class="category_header">
+                <h2>Receipt Info</h2>
+              </div>
+              <div class="category_inputs">
+                <label>Total</label>
+                <input type="text" name="total" value="$31.79" placeholder="$0.00">
+                <label>Tax</label>
+                <input type="text" name="tax" value="$2.23" placeholder="$0.00">
 
-              <h3>Amount Entered:</h3>
-              <div class="output_field">
-                <p><span class="subtotal">$24.26</span> / $31.79</p>           
-              </div>  
-            </div>
-           </div> 
+                <h3>Amount Entered:</h3>
+                <div class="output_field">
+                  <p><span class="subtotal">$24.26</span> / $31.79</p>           
+                </div> 
+              </div>
+             </div>
+                
+          </div>   
            <div class="form_module category_module">
             <div class="category_header">
               <h2 contenteditable="true">Category 1</h2>
@@ -58,8 +62,11 @@
                 <td><input type="text" name="category_6" value="" placeholder="$0.00"></td>
               </tr>
             </table>
-            <h3>Category Total</h3>
-            <div class="output_field"><p>$13.21</p></div>           
+            <h3>Category Total</h3> 
+
+
+            <div class="output_field"><p>$13.21</p></div>   
+            <p class="tax_check">Include Tax? <input type="checkbox" class="tax_toggle" name="tax" checked></p>        
            </div>
           <div class="form_module category_module">
             <div class="category_header">
@@ -88,14 +95,42 @@
               </tr>
             </table>
             <h3>Category Total</h3>
-            <div class="output_field"><p>$11.05</p></div>             
+            <div class="output_field"><p>$11.05</p></div>
+            <p class="tax_check">Include Tax? <input type="checkbox" class="tax_toggle" name="tax" checked></p>             
+           </div>
+                     <div class="form_module category_module">
+            <div class="category_header">
+              <h2 contenteditable="true">Category 2</h2>
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+              <!-- put slider in here -->
+            </div>
+            <table>
+              <tr>
+                <td><input type="text" name="category_1" value="$7.05" placeholder="$0.00"></td>
+              </tr>  
+              <tr>
+                <td><input type="text" name="category_2" value="$4.00" placeholder="$0.00"></td>
+              </tr>
+              <tr>
+                <td><input type="text" name="category_3" value="" placeholder="$0.00"></td>
+              </tr>  
+              <tr>
+                <td><input type="text" name="category_4" value="" placeholder="$0.00"></td>
+              </tr>
+              <tr>
+                <td><input type="text" name="category_5" value="" placeholder="$0.00"></td>
+              </tr>  
+              <tr>
+                <td><input type="text" name="category_6" value="" placeholder="$0.00"></td>
+              </tr>
+            </table>
+            <h3>Category Total</h3>
+            <div class="output_field"><p>$11.05</p></div>
+            <p class="tax_check">Include Tax? <input type="checkbox" class="tax_toggle" name="tax" checked></p>             
            </div>
            <a href="#!" class="add_btn">+</a>
+           <div class="add_btn_mobile"></div>
         </main>
-        <footer>
-
-          
-        </footer>
         <script></script>
         <script></script>
     </body>
