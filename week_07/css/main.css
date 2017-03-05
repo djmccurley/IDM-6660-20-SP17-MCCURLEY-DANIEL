@@ -141,7 +141,12 @@ header a:focus, header a:active, header a:hover {
   transition: .15s ease all;
 }
 
-
+aside.help_info {
+  color: #888;
+  width: 80%;
+  margin: 4rem auto 0 auto;
+  display: none;
+}
 
 main {
   margin: 2rem 0 3rem 0;
