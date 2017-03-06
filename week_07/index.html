@@ -16,12 +16,14 @@
           <a href="#!" class="help_btn"><i class="fa fa-question-circle" aria-hidden="true"></i></a>
         </header>
         <aside class="help_info">
-          <p>This is the about me part that will be hideable. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>This app helps you categorize expenses from a single receipt. Let's say you went to Target and spent $100 on some groceries, some toiletries and some baby supplies. Now you want to enter your expenses into your monthly budget categories, but you aren't sure how much of that $100 you spent in each category.</p>
+          <p>Here's how you'd enter that information into the app:</p>
+          <ol>
+            <li>Enter the grand total and the amount of tax from the receipt in "Receipt Info"</li>
+            <li>Edit the name of each category you want to use. You can add and delete categories, too!</li>
+            <li>Go through your receipt and enter each expense in the corresponding category. The app will total up each category and keep track of the grand total in the Receipt Info box</li>
+          </ol>
+          <p>(This is a work in progress - not all functions work as advertised yet)</p>
         </aside>
         <main class="clearfix">
           <div class="receipt_wrapper clearfix">
@@ -37,7 +39,7 @@
 
                 <h3>Amount Entered:</h3>
                 <div class="output_field">
-                  <p><span class="subtotal">$24.26</span> / $31.79</p>           
+                  <p><span class="subtotal">$26.26</span> / $31.79</p>           
                 </div> 
               </div>
              </div>
@@ -46,8 +48,8 @@
           <div class="category_wrapper clearfix">
            <div class="form_module category_module">
             <div class="category_header">
-              <h2 contenteditable="true">Category 1</h2>
-              <a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+              <h2 contenteditable="true">Category</h2>
+              <a href="#!" class="delete_btn"><i class="fa fa-trash-o" aria-hidden="true"></i></a> 
               <!-- put slider in here -->
             </div>
             <table>
@@ -78,8 +80,8 @@
            </div>
           <div class="form_module category_module">
             <div class="category_header">
-              <h2 contenteditable="true">Category 2</h2>
-              <a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+              <h2 contenteditable="true">Category</h2>
+              <a href="#!" class="delete_btn"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
               <!-- put slider in here -->
             </div>
             <table>
@@ -106,18 +108,18 @@
             <div class="output_field"><p>$11.05</p></div>
             <p class="tax_check">Include Tax? <input type="checkbox" class="tax_toggle" name="tax" checked></p>             
            </div>
-                     <div class="form_module category_module">
+          <div class="form_module category_module">
             <div class="category_header">
-              <h2 contenteditable="true">Category 2</h2>
-              <a href="#!"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
+              <h2 contenteditable="true">Category</h2>
+              <a href="#!" class="delete_btn"><i class="fa fa-trash-o" aria-hidden="true"></i></a>
               <!-- put slider in here -->
             </div>
             <table>
               <tr>
-                <td><input type="text" name="category_1" value="$7.05" placeholder="$0.00"></td>
+                <td><input type="text" name="category_1" value="$2.00" placeholder="$0.00"></td>
               </tr>  
               <tr>
-                <td><input type="text" name="category_2" value="$4.00" placeholder="$0.00"></td>
+                <td><input type="text" name="category_2" value="" placeholder="$0.00"></td>
               </tr>
               <tr>
                 <td><input type="text" name="category_3" value="" placeholder="$0.00"></td>
@@ -133,7 +135,7 @@
               </tr>
             </table>
             <h3>Category Total</h3>
-            <div class="output_field"><p>$11.05</p></div>
+            <div class="output_field"><p>$2.00</p></div>
             <p class="tax_check">Include Tax? <input type="checkbox" class="tax_toggle" name="tax" checked></p>             
             </div>
           </div> <!-- category wrapper -->  
