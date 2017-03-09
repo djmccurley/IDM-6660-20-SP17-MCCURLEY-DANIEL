@@ -1,0 +1,27 @@
+/* MOBILE */
+p {
+  font-family: Courier, monospace;
+  text-align: center;
+  margin-top: 4rem; }
+
+/* TABLET */
+@media only screen and (min-width: 500px) {
+  body {
+    background-color: #333; }
+
+  p {
+    font-size: 2rem;
+    color: orange;
+    width: 70%;
+    margin: 4rem auto; } }
+/* Desktop */
+@media only screen and (min-width: 900px) {
+  body {
+    background-color: pink; }
+
+  p {
+    font-size: 3.5rem;
+    color: yellow;
+    width: 80%; } }
+
+/*# sourceMappingURL=css.css.map */
