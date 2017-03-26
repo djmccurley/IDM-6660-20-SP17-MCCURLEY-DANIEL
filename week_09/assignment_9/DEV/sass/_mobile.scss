@@ -27,8 +27,9 @@ h2 {
 
 main {
 	font-family: $enriqueta;
+	font-size: 1rem;
 	line-height: 1.4rem;
-	padding: 0 1rem;
+	padding: 0 1rem 1rem 1rem;
 }
 
 p {
@@ -39,5 +40,7 @@ footer {
 	font-family: $montserrat;
 	font-size: .75rem;
 	color: $red;
-	padding: 0 1rem;
+	margin: 0 1rem;
+	border-top: 2pt solid $red;
+
 }

@@ -32,8 +32,9 @@ h2 {
 
 main {
   font-family: "Enriqueta", serif;
+  font-size: 1rem;
   line-height: 1.4rem;
-  padding: 0 1rem; }
+  padding: 0 1rem 1rem 1rem; }
 
 p {
   margin: 1.4rem 0; }
@@ -42,6 +43,42 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: .75rem;
   color: #ff4136;
-  padding: 0 1rem; }
+  margin: 0 1rem;
+  border-top: 2pt solid #ff4136; }
+
+@media screen and (min-width: 570px) {
+  body {
+    max-width: 80%;
+    margin: 2rem auto; }
+
+  h1 {
+    font-size: 3.5rem; }
+
+  h2 {
+    font-size: 1.7rem; }
+
+  main {
+    font-size: 1.1rem;
+    line-height: 1.5rem; }
+
+  footer {
+    font-size: .9rem; } }
+@media screen and (min-width: 850px) {
+  body {
+    max-width: 700px;
+    margin: 2rem auto; }
+
+  h1 {
+    font-size: 4.5rem; }
+
+  h2 {
+    font-size: 1.9rem; }
+
+  main {
+    font-size: 1.3rem;
+    line-height: 1.7rem; }
+
+  footer {
+    font-size: 1rem; } }
 
 /*# sourceMappingURL=css.css.map */
