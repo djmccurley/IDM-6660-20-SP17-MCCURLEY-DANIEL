@@ -9,4 +9,39 @@ html {
   display: table;
   clear: both; }
 
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  color: #111; }
+
+header {
+  padding: .5rem 1rem; }
+
+h1, h2 {
+  font-family: "Montserrat", sans-serif;
+  margin: 1rem 0;
+  color: #ff4136; }
+
+h1 {
+  font-size: 2.5rem; }
+
+h2 {
+  font-size: 1.3rem;
+  font-weight: 400; }
+
+main {
+  font-family: "Enriqueta", serif;
+  line-height: 1.4rem;
+  padding: 0 1rem; }
+
+p {
+  margin: 1.4rem 0; }
+
+footer {
+  font-family: "Montserrat", sans-serif;
+  font-size: .75rem;
+  color: #ff4136;
+  padding: 0 1rem; }
+
 /*# sourceMappingURL=css.css.map */
