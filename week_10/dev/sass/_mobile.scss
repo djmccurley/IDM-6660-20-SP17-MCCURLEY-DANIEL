@@ -16,7 +16,6 @@ h1 {
 }
 
 nav {
-	background-color: $pink;
 }
 
 .menu-toggle {
@@ -29,6 +28,7 @@ nav {
 	position: fixed;
 	top: 8%;
 	right: 5%;
+	z-index: 5;
 }
 
 label {
@@ -48,7 +48,32 @@ label::before, label::after {
 	margin-top: 4px;
 }
 
+ul {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background-color: $pink;
+	margin: 0;
+	padding: 1rem;
+	list-style: none;
+}
+
+li {
+	font-size: 3rem;
+	line-height: 5.5rem;
+
+	a {
+		text-decoration: none;
+		color: $pink;
+		background-color: $yellow;
+		padding: .5rem 1rem;
+	}
+}
+
 section {
 	padding: 1rem;
 	line-height: 1.4rem;
 }
+

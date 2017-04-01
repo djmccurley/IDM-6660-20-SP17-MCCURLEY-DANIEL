@@ -24,9 +24,6 @@ h1 {
   margin: 0;
   padding: 1rem; }
 
-nav {
-  background-color: #F012BE; }
-
 .menu-toggle {
   display: none; }
 
@@ -35,7 +32,8 @@ nav {
   width: 40px;
   position: fixed;
   top: 8%;
-  right: 5%; }
+  right: 5%;
+  z-index: 5; }
 
 label {
   display: block;
@@ -51,6 +49,26 @@ label::before, label::after {
   background-color: #F012BE;
   height: 6px;
   margin-top: 4px; }
+
+ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #F012BE;
+  margin: 0;
+  padding: 1rem;
+  list-style: none; }
+
+li {
+  font-size: 3rem;
+  line-height: 5.5rem; }
+  li a {
+    text-decoration: none;
+    color: #F012BE;
+    background-color: #FFDC00;
+    padding: .5rem 1rem; }
 
 section {
   padding: 1rem;
