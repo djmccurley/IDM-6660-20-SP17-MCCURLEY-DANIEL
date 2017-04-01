@@ -1,0 +1,54 @@
+body {
+	font-family: monospace;
+	font-size: 16px;
+	background-color: $yellow;
+	color: $black;
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-weight: normal;
+	/* background-color: $pink; */
+	color: $pink;
+	margin: 0;
+	padding: 1rem;
+}
+
+nav {
+	background-color: $pink;
+}
+
+.menu-toggle {
+	display: none;
+}
+
+.label-holder {
+	height: 30px;
+	width: 40px;
+	position: fixed;
+	top: 8%;
+	right: 5%;
+}
+
+label {
+	display: block;
+	width: 40px;
+	background-color: $pink;
+	height: 6px;
+	padding-top: 7px;
+}
+
+label::before, label::after {
+	content: "";
+	display: block;
+	width: 40px;
+	background-color: $pink;
+	height: 6px;
+	margin-top: 4px;
+}
+
+section {
+	padding: 1rem;
+	line-height: 1.4rem;
+}
