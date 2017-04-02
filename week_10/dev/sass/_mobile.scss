@@ -9,7 +9,6 @@ body {
 
 h1 {
 	font-weight: normal;
-	/* background-color: $pink; */
 	background-color: $pink;
 	color: $yellow;
 	margin: 0;
@@ -29,7 +28,7 @@ nav {
 
 .label-holder {
 	background-color: $pink;
-		position: fixed;
+	position: fixed;
 	top: 8%;
 	right: 5%;
 	z-index: 5;
