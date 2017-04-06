@@ -1,0 +1,15 @@
+body {
+	background-color: $gray;
+
+	@include tablet {
+		background-color: $gold;
+	}
+
+	@include desktop {
+		background-color: $orange;
+	}
+
+	@include tv {
+		background-color: $green;
+	}
+}

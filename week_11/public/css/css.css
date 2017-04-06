@@ -1,0 +1,13 @@
+body {
+  background-color: #444444; }
+  @media screen and (min-width: 480px) {
+    body {
+      background-color: #CCA32B; } }
+  @media screen and (min-width: 960px) {
+    body {
+      background-color: #FFA23B; } }
+  @media screen and (min-width: 1200px) {
+    body {
+      background-color: #1ACC9E; } }
+
+/*# sourceMappingURL=css.css.map */
