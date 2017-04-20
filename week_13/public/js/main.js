@@ -1,6 +1,7 @@
 $(document).ready(function() {
 	$("#search").click(searchWiki);
 
+	//makes ajax request based on settings and input
 	function searchWiki() {
 		var searchSettings = {
 		  "async": true,
@@ -12,39 +13,46 @@ $(document).ready(function() {
 		    'Api-User-Agent': 'Wikipedia Searcher/1.0'
 		  }
 		}
+		//updates settings url based on input in search box
 		var urlBase = "https://en.wikipedia.org/w/api.php?action=opensearch&search=";
 		var searchTerm = document.getElementById("searchterm").value;
 		searchSettings["url"] = urlBase + searchTerm;
 		console.log(searchSettings["url"]);
 	  $.ajax(searchSettings).done(function(response) {
+		  //logs response and sends to processEntries to add to DOM
 		  console.log(response);
+		  
 		  processEntries(response);
 		});
 	}
 
+	//iterates through response arrays to connect title, desc and link
 	function processEntries(response) {
 		for (i=0; i<response[1].length; i++) {
 			var title = response[1][i];
 			var description = response[2][i];
 			var link = response[3][i];
+			//creates new object with current article title, desc and link
 			var thisArticle = new createEntry(title, description, link);
+			//passes current article object to be added to DIV
 			appendEntry(thisArticle);
+		}
 	}
-}
+	//creates HTML strings for each article element: title, desc and link
+	function createEntry(title, description, link) {
+		this.articleTitle = "<h2>" + title + "</h2>";
+		this.articleDescription = "<p>" + description + "</p>";
+		this.articleLink = "<a href='" + link + "' target='_blank'>" + link + "</a>";
+	}
 
-function createEntry(title, description, link) {
-	this.articleTitle = "<h2>" + title + "</h2>";
-	this.articleDescription = "<p>" + description + "</p>";
-	this.articleLink = "<a href='" + link + "' target='_blank'>" + link + "</a>";
-}
+	//creates new div, appends all elements for article, appends div to output div
+	function appendEntry(thisArticle) {
+		var newDiv = document.createElement("div");
+		newDiv.innerHTML = thisArticle.articleTitle;
+		newDiv.innerHTML += thisArticle.articleDescription;
+		newDiv.innerHTML += thisArticle.articleLink;
 
-function appendEntry(thisArticle) {
-	var newDiv = document.createElement("div");
-	newDiv.innerHTML = thisArticle.articleTitle;
-	newDiv.innerHTML += thisArticle.articleDescription;
-	newDiv.innerHTML += thisArticle.articleLink;
+		$("#output").append(newDiv);
 
-	$("#output").append(newDiv);
-
-}	
+	}	
 });
