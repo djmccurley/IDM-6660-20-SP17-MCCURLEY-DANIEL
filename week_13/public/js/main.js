@@ -52,7 +52,7 @@ $(document).ready(function() {
 		newDiv.innerHTML += thisArticle.articleDescription;
 		newDiv.innerHTML += thisArticle.articleLink;
 
-		$("#output").append(newDiv);
+		$("#output_area").append(newDiv);
 
 	}	
 });
