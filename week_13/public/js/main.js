@@ -1,5 +1,16 @@
 $(document).ready(function() {
-	$("#search").click(searchWiki);
+	var inputBox = document.getElementById("searchterm");
+	$("#search").click(function() {
+		if(inputBox.value) {
+			$("main").removeClass("landing");
+			searchWiki();	
+		} else {
+			inputBox.placeholder = "Enter some words here";
+		}
+		
+
+
+	});
 
 	//makes ajax request based on settings and input
 	function searchWiki() {
@@ -15,7 +26,7 @@ $(document).ready(function() {
 		}
 		//updates settings url based on input in search box
 		var urlBase = "https://en.wikipedia.org/w/api.php?action=opensearch&search=";
-		var searchTerm = document.getElementById("searchterm").value;
+		var searchTerm = inputBox.value;
 		searchSettings["url"] = urlBase + searchTerm;
 		console.log(searchSettings["url"]);
 	  $.ajax(searchSettings).done(function(response) {
