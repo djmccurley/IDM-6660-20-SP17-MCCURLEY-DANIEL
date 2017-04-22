@@ -3,7 +3,7 @@ $(document).ready(function() {
 	$("#search").click(function() {
 		if(inputBox.value) {
 			$("main.landing").removeClass("landing").addClass("search");
-			$(".inputs").slideDown();
+			$(".inputs").slideDown(300);
 			searchWiki();	
 		} else {
 			inputBox.placeholder = "Please enter a search term";
@@ -59,7 +59,7 @@ $(document).ready(function() {
 
 	//creates new div, appends all elements for article, appends div to output div
 	function appendEntry(thisArticle) {
-		var newDiv = document.createElement("div");
+		var newDiv = document.createElement("article");
 		newDiv.innerHTML = thisArticle.articleTitle;
 		newDiv.innerHTML += thisArticle.articleDescription;
 		newDiv.innerHTML += thisArticle.articleLink;
