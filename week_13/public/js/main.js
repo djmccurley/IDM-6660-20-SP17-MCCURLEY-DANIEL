@@ -2,10 +2,11 @@ $(document).ready(function() {
 	var inputBox = document.getElementById("searchterm");
 	$("#search").click(function() {
 		if(inputBox.value) {
-			$("main").removeClass("landing");
+			$("main.landing").removeClass("landing").addClass("search");
+			$(".inputs").slideDown();
 			searchWiki();	
 		} else {
-			inputBox.placeholder = "Enter some words here";
+			inputBox.placeholder = "Please enter a search term";
 		}
 		
 
@@ -32,7 +33,7 @@ $(document).ready(function() {
 	  $.ajax(searchSettings).done(function(response) {
 		  //logs response and sends to processEntries to add to DOM
 		  console.log(response);
-		  
+		  $("#output_area").empty();
 		  processEntries(response);
 		});
 	}

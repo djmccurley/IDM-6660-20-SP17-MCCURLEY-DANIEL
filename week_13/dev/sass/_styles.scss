@@ -35,7 +35,8 @@ input {
 	border-radius: 2px;
 	color: $dark-gray;
 	padding-left: .7rem;
-	font-size: 1.25rem;
+	font-size: 1rem;
+	line-height: 2.25rem;
 }
 
 button {
@@ -61,7 +62,7 @@ footer {
 	}
 }
 
-//initial state styles
+//landing page state styles
 main.landing {
 	height: 100vh;
 	background-image: url("../img/background.jpg");
@@ -74,7 +75,6 @@ main.landing {
 
 	input {
 		width: 100%;
-		height: 3rem;
 		margin-bottom: .75rem;
 	}
 
@@ -91,4 +91,26 @@ main.landing {
 	bottom: 2%;
 	width: 100%;
 	text-align: center;
+}
+
+//search state styles
+
+main.search {
+	margin-top: 3rem;
+}
+
+.search .inputs {
+	background-color: $light-blue;
+	padding: .75rem;
+	display: none;
+
+	input {
+		width: 70%;
+		margin-right: .75rem;
+	}
+
+	button {
+		width: 25%;
+		line-height: 2rem;
+	}
 }

@@ -85,7 +85,8 @@ input {
   border-radius: 2px;
   color: #757575;
   padding-left: .7rem;
-  font-size: 1.25rem; }
+  font-size: 1rem;
+  line-height: 2.25rem; }
 
 button {
   background: #FF5722;
@@ -116,7 +117,6 @@ main.landing {
   width: 100%; }
   .landing .inputs input {
     width: 100%;
-    height: 3rem;
     margin-bottom: .75rem; }
   .landing .inputs button {
     display: block;
@@ -129,5 +129,19 @@ main.landing {
   bottom: 2%;
   width: 100%;
   text-align: center; }
+
+main.search {
+  margin-top: 3rem; }
+
+.search .inputs {
+  background-color: #03A9F4;
+  padding: .75rem;
+  display: none; }
+  .search .inputs input {
+    width: 70%;
+    margin-right: .75rem; }
+  .search .inputs button {
+    width: 25%;
+    line-height: 2rem; }
 
 /*# sourceMappingURL=css.css.map */
