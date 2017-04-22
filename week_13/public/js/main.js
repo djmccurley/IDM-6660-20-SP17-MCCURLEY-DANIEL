@@ -1,17 +1,5 @@
 $(document).ready(function() {
 	var inputBox = document.getElementById("searchterm");
-	$("#search").click(function() {
-		if(inputBox.value) {
-			$("main.landing").removeClass("landing").addClass("search");
-			$(".inputs").slideDown(300);
-			searchWiki();	
-		} else {
-			inputBox.placeholder = "Please enter a search term";
-		}
-		
-
-
-	});
 
 	//makes ajax request based on settings and input
 	function searchWiki() {
@@ -67,4 +55,17 @@ $(document).ready(function() {
 		$("#output_area").append(newDiv);
 
 	}	
+	$("#search").click(function() {
+		if(inputBox.value) {
+			$("main.landing").removeClass("landing").addClass("search");
+			$(".inputs").slideDown(300);
+			searchWiki();	
+		} else {
+			inputBox.placeholder = "Please enter a search term";
+		}
+	});
+
+	$("#aboutbutton").click(function() {
+		$(".about").slideToggle(300);
+	});
 });

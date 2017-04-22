@@ -20,10 +20,23 @@ header {
 		display: inline-block;		
 	}
 
-	a {
+	a#aboutbutton {
 		float: right;
 		font-size: .8rem;
 		line-height: 1rem;
+	}
+
+	.about {
+		padding: 4rem 2rem 2rem 2rem;
+		font-size: .875rem;
+		line-height: 1.3rem;
+		height: 100vh;
+		color: $white;
+		display: none;
+
+		a {
+			text-decoration: underline;
+		}
 	}
 }
 
@@ -121,6 +134,8 @@ article {
 	border-bottom: 1px solid rgba(0,0,0,.12);
 	padding: 1.5rem 1rem;
 	color: $dark-gray;
+	word-wrap: break-word; //contains long links with out overflow
+
 
 	h2 {
 		font-weight: 700;
@@ -135,13 +150,20 @@ article {
 		margin-bottom: 1.35rem;
 	}
 
-	a {
+	a:link, a:visited {
 		color: $light-blue;
 		font-size: .875rem;
 		margin-bottom: 1.35rem;
+		transition: .2s ease all;
+	}
+
+	a:hover, a:focus, a:active {
+		color: $blue;
 	}
 }
 
 .search footer {
-
+	width: 100%;
+	background-color: $blue;
+	padding: 1rem;
 }

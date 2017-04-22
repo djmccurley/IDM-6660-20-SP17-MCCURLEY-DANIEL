@@ -73,10 +73,19 @@ header {
   header h1, header a {
     color: #ffffff;
     display: inline-block; }
-  header a {
+  header a#aboutbutton {
     float: right;
     font-size: .8rem;
     line-height: 1rem; }
+  header .about {
+    padding: 4rem 2rem 2rem 2rem;
+    font-size: .875rem;
+    line-height: 1.3rem;
+    height: 100vh;
+    color: #ffffff;
+    display: none; }
+    header .about a {
+      text-decoration: underline; }
 
 input {
   background-color: #f7f7f7;
@@ -149,7 +158,8 @@ article {
   background-color: #f7f7f7;
   border-bottom: 1px solid rgba(0, 0, 0, 0.12);
   padding: 1.5rem 1rem;
-  color: #757575; }
+  color: #757575;
+  word-wrap: break-word; }
   article h2 {
     font-weight: 700;
     font-size: 1rem;
@@ -158,9 +168,17 @@ article {
     font-size: .875rem;
     line-height: 1.35rem;
     margin-bottom: 1.35rem; }
-  article a {
+  article a:link, article a:visited {
     color: #03A9F4;
     font-size: .875rem;
-    margin-bottom: 1.35rem; }
+    margin-bottom: 1.35rem;
+    transition: .2s ease all; }
+  article a:hover, article a:focus, article a:active {
+    color: #0288D1; }
+
+.search footer {
+  width: 100%;
+  background-color: #0288D1;
+  padding: 1rem; }
 
 /*# sourceMappingURL=css.css.map */
