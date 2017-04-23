@@ -126,12 +126,13 @@ main.landing {
   width: 100%; }
   .landing .inputs input {
     width: 100%;
+    line-height: 2.75rem;
     margin-bottom: .75rem; }
   .landing .inputs button {
     display: block;
     width: 45%;
     margin: auto;
-    line-height: 2.5rem; }
+    line-height: 3.5rem; }
 
 .landing footer {
   position: absolute;
