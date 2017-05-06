@@ -1,0 +1,19 @@
+For your first check-in, head over to the discussion board and write a bit about your experience developing your site last week. What went well? What went completely wrong? How did you resolve any issues or stumbling blocks you came across? How well did you acclimate to your new technology?
+
+You probably had to make quite a mad dash last week, developing a whole new site, or adding and building upon past work. Tell the class about it. Don't worry about being too frank or patting yourself on the back for feats of developmental daring do! I want to hear how it went and I want you to share your experience with your classmates. 
+
+I don't usually do this, but in an effort to get you to open up a bit about what you did, how you did it and how it went, I'm going to ask for at least 500 words. But, it's an informal type of writing, so hopefully that's not too heavy a burden.
+
+---
+
+I started my project by trying to get the API call (the Wikipedia search and response) working first in a barebones HTML page (per Robert's advice). That part went way better than I expected. In the projects I've made in the past with API interaction, it was a really long trial and error process to get them to work. This one was much easier to implement, and I think using Postman to see the guts of the API response BEFORE trying to do it in javascript was the difference maker. The wikipedia API is also very well documented, which helped too - all I needed was to find the right query to send, and then the rest was just tweaking that in Postman.
+
+Once I started getting back what I wanted from the API call, I began thinking about how to inject the contents into the DOM. I ended up using HTML strings in the javascript, then injecting those into a new <article> element for each search result. I'm not sure if this is the most efficient or slick way to do this, but it works well enough for now. I think having the html hardcoded into javascript strings might be less than ideal for maintainability down the road (like if I wanted to expand in use pictures or add a class to each element.) 
+
+I wrote out a rough diagram/pseudo code for how the looping would work with each API response - that really helped when I went in to actually code it. Because I had thought it through already on paper, I was able to pay closer attention to typing and syntax on the first attempt. By some miracle the looping functions actually worked on the first shot, so I was super proud of that.
+
+From there, I started with the mobile layout and implemented the layout and UI with SASS/CSS. I ran into some problems where the responsive changes worked going narrow to wide, but then they failed to work going from wide to narrow viewports. Most of this was due to javascript events not firing or elements being in the wrong state when they fired - not really a problem with the responsive design or CSS.
+
+I think my SASS partial for the main styles (_styles.scss) gets pretty complex, with a lot of nesting. I read somewhere that we should keep it at 3-4 levels or nesting or LESS, and I think I'm right about at that. I could stand to go back through and separate out some of that code into multiple partials now that it's done. While developing, I just went through and kept adding/adjusting as needed without thinking about partial structure.
+
+I was surprised that this project seemed to go easier than I thought it would from the start, but now I'm starting to see some of the bugs that people are finding roll in. I'll be interested to see if I can fix or account for these without massive restructuring or causing 4x more bugs by fixing the one.
